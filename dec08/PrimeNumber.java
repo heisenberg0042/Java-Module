@@ -19,9 +19,11 @@ public class PrimeNumber {
             }
         }
         if(b){
+
             System.out.println("Number is prime");
         }
         else{
+
             System.out.println("NUmber is not prime");
         }
 

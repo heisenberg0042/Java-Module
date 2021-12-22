@@ -22,7 +22,7 @@ public class Loops {
 
         //////////////////////// do.. while //////////////////////
 
-        int y =10;   // runs atleast one time
+        int y =10;   // runs at least one time
 
         do{
             System.out.println("Hello");

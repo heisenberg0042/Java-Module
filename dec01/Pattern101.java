@@ -1,8 +1,12 @@
 package dec01;
 
+import dec03.Employee;
+
 public class Pattern101 {
 
     public static void main(String[] args) {
+
+
 
         int arr[][]= new int[5][5];
 

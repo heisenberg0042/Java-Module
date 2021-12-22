@@ -8,31 +8,41 @@ public class Arrayclass {
 
     public static void main(String[] args) {
 
-        String arr[] = new String[5];  // declaring an array
+        // 12 45 67 87 1 3 2
 
-        int arr2[] = new int[5];
+        // 1 2 3 87 67 45 12
+        // Arrays.sort();
 
-        System.out.println("Enter Values in array");
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter Size of Array");
+        int size = sc.nextInt();
 
-        Scanner sc=new Scanner(System.in);
+        int arr[]= new int[size];
 
-        for (int i=0;i<arr.length;i++){   // iteration
+        System.out.println("Enter values in the array");
+        for(int i=0;i<size;i++){
 
-            arr[i] = sc.nextLine();
+            arr[i]=sc.nextInt();
         }
 
-//        for(int i=0;i< arr.length;i++){
-//
-//            System.out.println(arr[i]);
-//
-//        }
-//        System.out.println(Arrays.toString(arr));
+        System.out.println("Your array is :->");
 
-        // for each
+        System.out.println(Arrays.toString(arr));
 
-        for (String value : arr){
+        System.out.println("Sorted Array is :->");  // 13 // 10 //78 //43 //90 /
+                                                    // 10 // 13
+        for(int i =0;i< size;i++){  // 0
 
-            System.out.println(value);
+            for(int j=i+1 ; j<size;j++ ){
+                int temp=0;
+                if(arr[i]>arr[j]){
+
+                    temp = arr[i];
+                    arr[i] = arr[j];
+                    arr[j]=temp;
+                }
+            }
         }
+        System.out.println(Arrays.toString(arr));
     }
 }

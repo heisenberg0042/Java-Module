@@ -20,7 +20,7 @@ public class FunctionPrograms {
     }
 
     void findDigit(int p){
-        // int p =12000
+        // int p =120000
 
         int result = 0;
       while(p>0){
@@ -30,8 +30,6 @@ public class FunctionPrograms {
           result++;
       }
         System.out.println("No Of Digit is -> "+result);
-
-
 
     }
 
